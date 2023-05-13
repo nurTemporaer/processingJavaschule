@@ -1,25 +1,33 @@
-int s = 10;
+void details() {
+  //for (int i = 0; i < (width+height)/s-1; i++) {
 
+  do {
+    int random = Math.random() * ( 7 - 0 );
 
-void quadrate() {
-  if (s > width or height) {
-    println("s is equal to " + s + " should be less than " + width + " or " + height);
-  }
-  for (int i = 0; i < width/s-1; i++) {
-    for (int k = 0; k < height/s-1; k++) {
-      if ((i+k) % 2 == 0) {
-        fill(0);
-      } else {
-        fill(255);
-      }
-
-      rect(0+s*i, 0+s*k, s, s);
+    switch(random) {
+    case 0:
+      print("0");
+      i++;
+    case 1:
+      print("1");
+      i++;
+    case 2:
+      print("2");
+      i++;
+    case 3:
+      print("3");
+      i++;
+    case 4:
+      print("4");
+      i++;
+    case 5:
+      print("5");
+      i++;
+    case 6:
+      print("6");
+      i++;
     }
+    while (i < (width+height)/s-1);
   }
 }
 
-void setup() {
-  noStroke();
-  size(640, 480);
-  quadrate();
-}
