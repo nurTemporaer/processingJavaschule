@@ -1,0 +1,25 @@
+int s = 10;
+
+
+void quadrate() {
+  if (s > width or height) {
+    println("s is equal to " + s + " should be less than " + width + " or " + height);
+  }
+  for (int i = 0; i < width/s-1; i++) {
+    for (int k = 0; k < height/s-1; k++) {
+      if ((i+k) % 2 == 0) {
+        fill(0);
+      } else {
+        fill(255);
+      }
+
+      rect(0+s*i, 0+s*k, s, s);
+    }
+  }
+}
+
+void setup() {
+  noStroke();
+  size(640, 480);
+  quadrate();
+}
